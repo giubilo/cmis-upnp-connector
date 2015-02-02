@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0"
+  configId="8">
+   <specVersion>
+      <major>1</major>
+      <minor>1</minor>
+   </specVersion>
+   <device>
+      <deviceType>urn:schemas-upnp-org:device:MediaServer:4</deviceType>
+      <friendlyName>allegria Media Server</friendlyName>
+      <manufacturer>allegria</manufacturer>
+      <manufacturerURL>http://allegria.github.io</manufacturerURL>
+      <modelDescription>Provides content through UPnP ContentDirectory service</modelDescription>
+      <modelName>CMIS DLNA Connector</modelName>
+      <modelNumber>1.0</modelNumber>
+      <modelURL>https://github.com/allegria/cmis-upnp-connector</modelURL>
+      <UDN>uuid:829f31d0-fe2a-438e-a276-ad2cd0afc877</UDN>
+      <serviceList>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:ContentDirectory:4</serviceType>
+            <serviceId>urn:upnp-org:serviceId:urn:schemas-upnp-org:service:ContentDirectory</serviceId>
+            <SCPDURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ContentDirectory4.xml</SCPDURL>
+            <controlURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ContentDirectory_control</controlURL>
+            <eventSubURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ContentDirectory_event</eventSubURL>
+         </service>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:ConnectionManager:3</serviceType>
+            <serviceId>urn:upnp-org:serviceId:urn:schemas-upnp-org:service:ConnectionManager</serviceId>
+            <SCPDURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ConnectionManager3.xml</SCPDURL>
+            <controlURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ConnectionManager_control</controlURL>
+            <eventSubURL>/service/829f31d0-fe2a-438e-a276-ad2cd0afc877/ConnectionManager_event</eventSubURL>
+         </service>
+      </serviceList>
+   </device>
+</root>

@@ -1,0 +1,54 @@
+allprojects {
+
+	apply plugin: 'eclipse'
+	
+	group = 'org.giubilo.upnp'
+	version = '2.2.1'	
+	
+	task wrapper(type: Wrapper) {
+		gradleVersion = '1.12'
+	}
+
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'application'
+
+	sourceCompatibility = 1.6
+	targetCompatibility = 1.6
+	
+	repositories {
+	   mavenCentral()
+	}
+
+	dependencies {
+		testCompile group: 'junit', name: 'junit', version: '4.+'
+	}
+
+	jar {
+		from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+		manifest {
+			attributes 'Implementation-Title': 'allegria upnp', 'Implementation-Version': version
+			attributes 'Main-Class': 'org.giubilo.cuppa.Console'
+					}
+	}
+
+}
+
+project(':upnp-apps:cuppa') {
+	dependencies {
+		compile project(':upnp-av')
+		}
+}
+
+project(':upnp-av') {
+	dependencies {
+		compile project(':upnp-stack')
+		}
+}
+
+project(':upnp-stack') {
+	dependencies {
+		}
+}

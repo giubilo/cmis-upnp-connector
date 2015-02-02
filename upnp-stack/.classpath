@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/commons-configuration-1.10.jar"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/cmis-upnp-connector/libs/netty-all-5.0.0.Alpha1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

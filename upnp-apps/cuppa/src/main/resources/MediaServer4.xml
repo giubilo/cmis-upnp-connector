@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>1</minor>
+   </specVersion>
+   <device>
+      <deviceType>urn:schemas-upnp-org:device:MediaServer:4</deviceType>
+      <friendlyName>Allegria Media Server</friendlyName>
+      <manufacturer>Allegria</manufacturer>
+      <manufacturerURL>http://allegria.github.io</manufacturerURL>
+      <modelDescription>Provides content through UPnP ContentDirectory service</modelDescription>
+      <modelName>CMIS DLNA Connector</modelName>
+      <modelNumber>1.0</modelNumber>
+      <modelURL>https://github.com/allegria/cmis-upnp-connector</modelURL>
+      <UDN>uuid:829f31d0-fe2a-438e-a276-ad2cd0afc877</UDN>
+      <iconList>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>260</width>
+				<height>260</height>
+				<depth>24</depth>
+				<url>/proxy/027d672c6a70ab72aa7c/260x260.png</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>120</width>
+				<height>120</height>
+				<depth>24</depth>
+				<url>/proxy/74b2fce849107951c424/120x120.png</url>
+			</icon>
+			<icon>
+				<mimetype>image/png</mimetype>
+				<width>48</width>
+				<height>48</height>
+				<depth>24</depth>
+				<url>/proxy/23b1739a6c33d02bf0ba/48x48.png</url>
+			</icon>
+		</iconList>
+		<serviceList>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:ContentDirectory:4</serviceType>
+            <serviceId>urn:upnp-org:serviceId:urn:schemas-upnp-org:service:ContentDirectory</serviceId>
+            <SCPDURL>/service/ContentDirectory4.xml</SCPDURL>
+            <controlURL>/service/ContentDirectory_control</controlURL>
+            <eventSubURL>/service/ContentDirectory_event</eventSubURL>
+         </service>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:ConnectionManager:3</serviceType>
+            <serviceId>urn:upnp-org:serviceId:urn:schemas-upnp-org:service:ConnectionManager</serviceId>
+            <SCPDURL>/service/ConnectionManager3.xml</SCPDURL>
+            <controlURL>/service/ConnectionManager_control</controlURL>
+            <eventSubURL>/service/ConnectionManager_event</eventSubURL>
+         </service>
+      </serviceList>
+   </device>
+</root>
